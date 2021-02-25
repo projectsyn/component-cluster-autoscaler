@@ -1,0 +1,5 @@
+= cluster-autoscaler
+
+cluster-autoscaler is a Commodore component to manage cluster-autoscaler.
+
+See the xref:references/parameters.adoc[parameters] reference for further details.
