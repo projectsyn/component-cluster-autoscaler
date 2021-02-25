@@ -1,5 +1,11 @@
 parameters:
   kapitan:
+    dependencies:
+      - type: helm
+        source: https://kubernetes.github.io/autoscaler
+        version: ${cluster_autoscaler:charts:cluster_autoscaler}
+        chart_name: cluster-autoscaler
+        output_path: dependencies/cluster-autoscaler/helmcharts/cluster-autoscaler
     compile:
       - input_paths:
           - cluster-autoscaler/component/app.jsonnet
@@ -9,4 +15,11 @@ parameters:
           - cluster-autoscaler/component/main.jsonnet
         input_type: jsonnet
         output_path: cluster-autoscaler/
-
+      - output_path: cluster-autoscaler/01_helmchart
+        input_type: helm
+        input_paths:
+          - cluster-autoscaler/helmcharts/cluster-autoscaler
+        helm_params:
+          release_name: ${cluster_autoscaler:release_name}
+          namespace: ${cluster_autoscaler:namespace}
+        helm_values: ${cluster_autoscaler:helm_values}

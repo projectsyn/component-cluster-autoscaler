@@ -1,3 +1,9 @@
 parameters:
   cluster_autoscaler:
     namespace: syn-cluster-autoscaler
+    release_name: cluster-autoscaler
+    charts:
+      cluster_autoscaler: 9.5.0
+    helm_values:
+      autoDiscovery:
+        clusterName: '${cluster:name}'
