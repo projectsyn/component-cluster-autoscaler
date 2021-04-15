@@ -15,7 +15,7 @@ The namespace in which to deploy this component.
 
 [horizontal]
 type:: string
-default:: `cluster-autoscaler`
+default:: `syn`
 
 The name syn-cluster-autoscaler is deployed.
 Usually there is just one deployment and therefore no change is required.
@@ -25,7 +25,7 @@ Usually there is just one deployment and therefore no change is required.
 
 [horizontal]
 type:: string
-default:: `9.5.0`
+default:: `9.9.2`
 
 The helm chart version going to be used.
 
