@@ -1,9 +1,6 @@
-# component-cluster-autoscaler
-Commodore component to manage the Kubernetes Cluster Autoscaler
-=======
 # Commodore Component: cluster-autoscaler
 
-This is a [Commodore][commodore] Component for cluster-autoscaler.
+This is a [Commodore][commodore] Component for the [Kubernetes Cluster Autoscaler](https://github.com/kubernetes/autoscaler/) provided by the Kubernetes Community.
 
 This repository is part of Project Syn.
 For documentation on Project Syn and this component, see https://syn.tools.
