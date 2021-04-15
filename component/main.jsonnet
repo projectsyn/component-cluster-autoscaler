@@ -7,5 +7,5 @@ local params = inv.parameters.cluster_autoscaler;
 
 // Define outputs below
 {
-    '00_namespace': kube.Namespace(params.namespace),
+  '00_namespace': kube.Namespace(params.namespace),
 }
