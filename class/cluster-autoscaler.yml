@@ -18,7 +18,7 @@ parameters:
       - output_path: cluster-autoscaler/01_helmchart
         input_type: helm
         input_paths:
-          - cluster-autoscaler/helmcharts/cluster-autoscaler
+          - cluster-autoscaler/helmcharts/cluster-autoscaler/${cluster_autoscaler:charts:cluster_autoscaler}/
         helm_params:
           release_name: ${cluster_autoscaler:release_name}
           namespace: ${cluster_autoscaler:namespace}
