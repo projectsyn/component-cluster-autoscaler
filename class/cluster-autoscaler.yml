@@ -5,7 +5,7 @@ parameters:
         source: https://kubernetes.github.io/autoscaler
         version: ${cluster_autoscaler:charts:cluster_autoscaler}
         chart_name: cluster-autoscaler
-        output_path: dependencies/cluster-autoscaler/helmcharts/cluster-autoscaler
+        output_path: dependencies/cluster-autoscaler/helmcharts/cluster-autoscaler/${cluster_autoscaler:charts:cluster_autoscaler}/
     compile:
       - input_paths:
           - cluster-autoscaler/component/app.jsonnet
