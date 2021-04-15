@@ -1,7 +1,7 @@
 parameters:
   cluster_autoscaler:
     namespace: syn-cluster-autoscaler
-    release_name: syn-cluster-autoscaler
+    release_name: syn
     charts:
       cluster_autoscaler: 9.9.2
     helm_values:
