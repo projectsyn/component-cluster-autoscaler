@@ -1,3 +1,0 @@
-:global:
-  componentName: cluster-autoscaler
-  githubUrl: https://github.com/projectsyn/component-cluster-autoscaler
